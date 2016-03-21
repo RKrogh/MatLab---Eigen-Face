@@ -3,7 +3,7 @@ function [eigvecs, eigvals] = findEigVecs(imvecs, T, D)
     eigvecs = [];
     for i = 1:size(imvecs,2),
         eigvec = D * U(:,i);
-        eigvec = eigvec ./ sum(eigvec);
+        eigvec = eigvec ./ norm(eigvec);
         eigvecs = [eigvecs, eigvec];
     end
 return

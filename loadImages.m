@@ -1,4 +1,4 @@
-function [imvecs,img] = loadImages()
+function [imvecs,img,imgPath, images] = loadImages()
 images = dir('D:\Users\Robert\Dropbox\Dropbox\Exjobb\MAtLAb\face_textures\Male\*.png');  
 imgPath = 'D:\Users\Robert\Dropbox\Dropbox\Exjobb\MAtLAb\face_textures\Male\';
 img=imread([imgPath images(1).name]);
